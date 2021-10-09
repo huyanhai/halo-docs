@@ -1,0 +1,36 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev . --open",
+    "build": "vitepress build .",
+    "serve": "vitepress serve .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.13",
+    "autoprefixer": "^10.3.5",
+    "docsearch.js": "^2.6.3",
+    "highlight.js": "^11.2.0",
+    "markdown-it": "^12.2.0",
+    "markdown-it-container": "^3.0.0",
+    "normalize.css": "^8.0.1",
+    "postcss": "^8.3.7",
+    "postcss-import": "^14.0.2",
+    "sass": "^1.42.1",
+    "tailwindcss": "^2.2.15",
+    "vitepress": "^0.19.1"
+  },
+  "dependencies": {
+    "@docsearch/js": "^3.0.0-alpha.40",
+    "@vueuse/core": "^6.5.3",
+    "element-plus": "^1.1.0-beta.12",
+    "markdown": "^0.5.0",
+    "marked": "^3.0.4",
+    "typed.js": "^2.0.12"
+  }
+}
