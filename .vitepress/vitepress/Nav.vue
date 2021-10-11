@@ -26,7 +26,8 @@ const { theme } = useData();
 const { basePath } = useFilePath();
 
 const repo = computed(() => {
-  return theme.value.repo;
+  const gitHub = theme.value.repo;
+  return gitHub.startsWith("/") ? gitHub.substring(1, gitHub.length) : gitHub;
 });
 </script>
 
