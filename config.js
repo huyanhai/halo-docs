@@ -45,6 +45,10 @@ module.exports = {
                 text: "ready sdk初始化成功",
                 link: "/zh/api/ready",
               },
+              {
+                text: "error sdk初始化失败",
+                link: "/zh/api/error",
+              },
             ],
           },
         ],

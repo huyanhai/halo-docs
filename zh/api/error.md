@@ -1,4 +1,4 @@
-# xxx.ready
+# xxx.error
 
 config 接口执行成功后执行该函数
 
@@ -6,7 +6,7 @@ sdk 成功返回值
 
 ```TypeScript
 {
-    errMsg:"ready:ok",
+    errMsg:"error:ok",
     checkResult:{chooseImage: true, copy: false},
     langage:""
 }
@@ -15,8 +15,8 @@ sdk 成功返回值
 示例
 
 ```TypeScript
-xxx.ready(({langage, checkResult})=>{
-    console.log("ready")
+xxx.error(({langage, checkResult})=>{
+    console.log("error")
 })
 ```
 

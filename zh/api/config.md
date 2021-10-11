@@ -1,4 +1,4 @@
-# config
+# xxx.config
 
 示例
 
