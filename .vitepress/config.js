@@ -9,7 +9,7 @@ module.exports = {
       host: true,
     },
   },
-  base: "/vite-docs/",
+  base: "/vite-docs/dist/",
   vue: {},
   markdown: {
     config: (md) => {
