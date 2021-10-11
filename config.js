@@ -2,7 +2,7 @@
 // https://fttp.jjf-tech.cn/vitepress/config/basics.html
 module.exports = {
   title: "EasiSdk",
-  base: "/docs/", // 部署路径
+  base: "/vite-docs/docs/", // 部署路径
   themeConfig: {
     theme: false,
     repo: "",
