@@ -19,6 +19,7 @@
           :href="`${basePath}/zh${item.link}`"
           v-for="(item, index) in menus"
           :key="index"
+          @click="showMenu = false"
         >
           {{ item.text }}
         </a>

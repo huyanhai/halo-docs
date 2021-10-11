@@ -10,6 +10,7 @@
           v-for="(item, index) in item.children"
           :key="index"
           :href="`${basePath}${item.link}`"
+          @click="$emit('sideItem', item)"
         >
           {{ item.text }}
         </a>
