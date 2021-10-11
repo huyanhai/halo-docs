@@ -1,5 +1,5 @@
-const mdPlugin = require('./plugins');
-const config = require('../config');
+const mdPlugin = require("./plugins");
+const config = require("../config");
 module.exports = {
   title: config.title,
   themeConfig: config.themeConfig,
@@ -9,9 +9,10 @@ module.exports = {
       host: true,
     },
   },
+  base: "/vite-docs/",
   vue: {},
   markdown: {
-    config: md => {
+    config: (md) => {
       mdPlugin(md);
     },
   },
