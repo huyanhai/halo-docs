@@ -1,15 +1,15 @@
 // title、themeConfig、head参考官网配置
 // https://fttp.jjf-tech.cn/vitepress/config/basics.html
 module.exports = {
-  title: "docs",
+  title: "EasiSdk",
+  base: "/docs/", // 部署路径
   themeConfig: {
-    base: "./",
     theme: false,
-    repo: "infinitasx/easi-customer-jssdk",
+    repo: "",
     logo: "/images/logo.png",
     agolia: {
-      apiKey: "e32c681af38f324039e81d81834e70b8",
-      appId: "7DCTSU0WBW",
+      apiKey: "",
+      appId: "",
     },
     editLinks: true,
     editLinkText: "Edit this page on GitHub",
@@ -35,11 +35,15 @@ module.exports = {
       {
         "/api/": [
           {
-            text: "基础文档",
+            text: "基础接口",
             children: [
               {
                 text: "config 基础配置",
                 link: "/zh/api/config",
+              },
+              {
+                text: "ready sdk初始化成功",
+                link: "/zh/api/ready",
               },
             ],
           },

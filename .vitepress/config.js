@@ -4,12 +4,12 @@ module.exports = {
   title: config.title,
   themeConfig: config.themeConfig,
   head: config.head,
+  base: config.base || "/",
   vite: {
     server: {
       host: true,
     },
   },
-  base: "/vite-docs/dist/",
   vue: {},
   markdown: {
     config: (md) => {

@@ -1,7 +1,8 @@
 <template>
   <header class="header border-b border-gray-100 px-30">
+    {{ basePath }}
     <section class="h-70 max-w-1376 w-full items-center flex flex-row justify-between mx-auto">
-      <a href="/" class="flex items-center h-30">
+      <a :href="basePath ? `${basePath}/index.html` : '/'" class="flex items-center h-30">
         <img class="mr-10 h-full max-w-full" src="/images/logo.svg" alt="" srcset="" />
       </a>
       <div class="flex flex-row items-center">
@@ -14,14 +15,17 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
-import { useData } from 'vitepress';
+import { computed } from "vue";
+import { useData } from "vitepress";
+import useFilePath from "../use/pagePath";
 
-import Menus from './navs/Menus.vue';
-import Search from './navs/Search.vue';
-import GitHub from './navs/GitHub.vue';
+import Menus from "./navs/Menus.vue";
+import Search from "./navs/Search.vue";
+import GitHub from "./navs/GitHub.vue";
 
 const { theme } = useData();
+const { basePath } = useFilePath();
+
 const repo = computed(() => {
   return theme.value.repo;
 });

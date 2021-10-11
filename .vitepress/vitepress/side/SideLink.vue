@@ -4,22 +4,12 @@
       <h3 class="text-16 text-black py-10 font-bold">{{ item.text }}</h3>
       <template v-if="item.children">
         <a
-          class="
-            h-40
-            leading-40
-            block
-            px-20
-            rounded-sm
-            text-14 text-gray-500
-            hover:text-gray-900
-            text-ellipsis
-            cursor-pointer
-          "
+          class="h-40 leading-40 block px-20 rounded-sm text-14 text-gray-500 hover:text-gray-900 text-ellipsis cursor-pointer"
           :title="item.text"
           :class="{ 'side-active': pagePath === item.link }"
           v-for="(item, index) in item.children"
           :key="index"
-          :href="item.link"
+          :href="`${basePath}${item.link}`"
         >
           {{ item.text }}
         </a>
@@ -29,9 +19,9 @@
 </template>
 
 <script setup>
-import useFilePath from '../../use/pagePath';
-import { toRaw } from 'vue';
-const { pagePath } = useFilePath();
+import useFilePath from "../../use/pagePath";
+import { toRaw } from "vue";
+const { pagePath, basePath } = useFilePath();
 const props = defineProps({
   sideGrpup: {
     type: Array,
