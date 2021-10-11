@@ -1,6 +1,5 @@
 <template>
   <header class="header border-b border-gray-100 px-30">
-    {{ basePath }}
     <section class="h-70 max-w-1376 w-full items-center flex flex-row justify-between mx-auto">
       <a :href="basePath ? `${basePath}/index.html` : '/'" class="flex items-center h-30">
         <img class="mr-10 h-full max-w-full" src="/images/logo.svg" alt="" srcset="" />
