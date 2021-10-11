@@ -5,7 +5,7 @@ module.exports = {
   base: "/vite-docs/docs/", // 部署路径
   themeConfig: {
     theme: false,
-    repo: "huyanhai/koa_vite",
+    repo: "huyanhai/vite-docs",
     logo: "/images/logo.png",
     agolia: {
       apiKey: "",
