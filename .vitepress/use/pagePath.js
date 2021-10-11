@@ -9,7 +9,7 @@ export default function useFilePath() {
   });
   const basePath = computed(() => {
     const base = site.value.base;
-    return base === "" ? base : base.substring(0, base.length - 1);
+    return base === "" ? base : base.;
   });
   return { pagePath, basePath };
 }
