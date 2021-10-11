@@ -1,46 +1,21 @@
 <template>
   <div>
-    <aside
-      class="
-        fixed
-        w-240
-        border-r
-        pr-10
-        border-gray-100
-        box-content
-        pt-20
-        overflow-y-scroll
-        top-70
-        bottom-0
-        hidden
-        md:flex
-      "
-    >
+    <aside class="fixed w-240 border-r pr-10 border-gray-100 box-content pt-20 overflow-y-scroll top-70 bottom-0 hidden md:flex">
       <SideLink :sideGrpup="sideArr" />
     </aside>
-    <div
-      class="drawer-handle transform flex"
-      @click="changeDrawer"
-      :class="[showDrawer ? 'drawer-open' : 'drawer-close']"
-    >
+    <div class="drawer-handle transform flex" @click="changeDrawer" :class="[showDrawer ? 'drawer-open' : 'drawer-close']">
       <i class="drawer-handle-icon"></i>
     </div>
-    <el-drawer
-      custom-class="drawer-container"
-      v-model="showDrawer"
-      :with-header="false"
-      direction="ltr"
-      :z-index="10"
-    >
+    <el-drawer custom-class="drawer-container" v-model="showDrawer" :with-header="false" direction="ltr" :z-index="10" :open-delay="0" :close-delay="0">
       <SideLink :sideGrpup="sideArr" />
     </el-drawer>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import SideLink from './side/SideLink.vue';
-import { useCurrentSide } from '../use/currentSideArr';
+import { ref } from "vue";
+import SideLink from "./side/SideLink.vue";
+import { useCurrentSide } from "../use/currentSideArr";
 
 const { sideArr } = useCurrentSide();
 const showDrawer = ref(false);
@@ -93,7 +68,7 @@ div.drawer-close {
   border-radius: 0 4px 4px 0;
   left: 0;
   z-index: 3000;
-  transition: transform 0.3s cubic-bezier(0.9, 0.9, 0.32, 0.23);
+  // transition: transform 0.3s cubic-bezier(0.9, 0.9, 0.32, 0.23);
   @apply md:hidden #{!important};
   .drawer-handle-icon {
     width: 14px;
@@ -102,7 +77,7 @@ div.drawer-close {
     position: relative;
     &::before {
       top: 5px;
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       background: #333;
@@ -111,7 +86,7 @@ div.drawer-close {
     }
     &::after {
       top: -5px;
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       background: #333;
