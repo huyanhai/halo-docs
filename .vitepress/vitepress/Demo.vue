@@ -2,32 +2,20 @@
   <div class="demo">
     <p v-html="decodedDescription"></p>
     <div class="container">
-      <Operation
-        class="px-10 py-20 border border-gray-100"
-        @showCode="showCode"
-        :code="rawSource"
-      />
-      <Example
-        :file="path"
-        :demo="formatPathDemos[path]"
-        class="p-20 border border-gray-100 border-t-0"
-      />
+      <Operation class="px-10 py-20 border border-gray-100" @showCode="showCode" :code="rawSource" />
+      <Example :file="path" :demo="formatPathDemos[path]" />
       <el-collapse-transition>
-        <SourceCode
-          v-if="showSource"
-          :code="source"
-          class="px-20 bg-gray-50 border border-gray-100 border-t-0"
-        />
+        <SourceCode v-if="showSource" :code="source" class="px-20 bg-gray-50 border border-gray-100 border-t-0" />
       </el-collapse-transition>
     </div>
   </div>
 </template>
 
 <script setup>
-import { computed, ref } from 'vue';
-import Operation from './demo/Operation.vue';
-import SourceCode from './demo/SourceCode.vue';
-import Example from './demo/Example.vue';
+import { computed, ref } from "vue";
+import Operation from "./demo/Operation.vue";
+import SourceCode from "./demo/SourceCode.vue";
+import Example from "./demo/Example.vue";
 
 const props = defineProps({
   source: {
@@ -72,8 +60,8 @@ const props = defineProps({
 });
 const formatPathDemos = computed(() => {
   const demos = {};
-  Object.keys(props.demos).forEach(key => {
-    demos[key.replace('../../examples/', '').replace('.vue', '')] = props.demos[key].default;
+  Object.keys(props.demos).forEach((key) => {
+    demos[key.replace("../../examples/", "").replace(".vue", "")] = props.demos[key].default;
   });
   return demos;
 });

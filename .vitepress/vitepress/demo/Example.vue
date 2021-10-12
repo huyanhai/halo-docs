@@ -1,5 +1,7 @@
 <template>
-  <component v-if="demo" :is="demo" v-bind="$attrs" />
+  <div class="p-20 border border-gray-100 border-t-0">
+    <component v-if="demo" :is="demo" v-bind="$attrs" />
+  </div>
 </template>
 
 <script setup>
