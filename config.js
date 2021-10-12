@@ -1,5 +1,5 @@
 // title、themeConfig、head参考官网配置
-// https://fttp.jjf-tech.cn/vitepress/config/basics.html
+// https://vitepress.vuejs.org/config/basics.html
 module.exports = {
   title: "EasiSdk",
   base: "/vite-docs/docs/", // 部署路径
