@@ -70,9 +70,8 @@ table {
     text-align: left;
   }
 }
-div[class*='language-'] {
+div[class*="language-"] {
   position: relative;
-  margin: 1rem -1.5rem;
   overflow-x: auto;
   @apply bg-gray-50 #{!important};
   code {
@@ -81,7 +80,12 @@ div[class*='language-'] {
   }
 }
 
-div[class*='language-']:before {
+div[class*="language-"] {
+  width: 100%;
+  margin: 0 !important;
+}
+
+div[class*="language-"]:before {
   position: absolute;
   top: 0.6em;
   right: 1em;
@@ -90,93 +94,93 @@ div[class*='language-']:before {
   color: #888;
 }
 
-div[class~='language-html']:before,
-div[class~='language-markup']:before {
-  content: 'html';
+div[class~="language-html"]:before,
+div[class~="language-markup"]:before {
+  content: "html";
 }
 
-div[class~='language-md']:before,
-div[class~='language-markdown']:before {
-  content: 'md';
+div[class~="language-md"]:before,
+div[class~="language-markdown"]:before {
+  content: "md";
 }
 
-div[class~='language-css']:before {
-  content: 'css';
+div[class~="language-css"]:before {
+  content: "css";
 }
 
-div[class~='language-sass']:before {
-  content: 'sass';
+div[class~="language-sass"]:before {
+  content: "sass";
 }
 
-div[class~='language-scss']:before {
-  content: 'scss';
+div[class~="language-scss"]:before {
+  content: "scss";
 }
 
-div[class~='language-less']:before {
-  content: 'less';
+div[class~="language-less"]:before {
+  content: "less";
 }
 
-div[class~='language-stylus']:before {
-  content: 'styl';
+div[class~="language-stylus"]:before {
+  content: "styl";
 }
 
-div[class~='language-js']:before,
-div[class~='language-javascript']:before {
-  content: 'js';
+div[class~="language-js"]:before,
+div[class~="language-javascript"]:before {
+  content: "js";
 }
 
-div[class~='language-ts']:before,
-div[class~='language-typescript']:before {
-  content: 'ts';
+div[class~="language-ts"]:before,
+div[class~="language-typescript"]:before {
+  content: "ts";
 }
 
-div[class~='language-json']:before {
-  content: 'json';
+div[class~="language-json"]:before {
+  content: "json";
 }
 
-div[class~='language-rb']:before,
-div[class~='language-ruby']:before {
-  content: 'rb';
+div[class~="language-rb"]:before,
+div[class~="language-ruby"]:before {
+  content: "rb";
 }
 
-div[class~='language-py']:before,
-div[class~='language-python']:before {
-  content: 'py';
+div[class~="language-py"]:before,
+div[class~="language-python"]:before {
+  content: "py";
 }
 
-div[class~='language-sh']:before,
-div[class~='language-bash']:before {
-  content: 'sh';
+div[class~="language-sh"]:before,
+div[class~="language-bash"]:before {
+  content: "sh";
 }
 
-div[class~='language-php']:before {
-  content: 'php';
+div[class~="language-php"]:before {
+  content: "php";
 }
 
-div[class~='language-go']:before {
-  content: 'go';
+div[class~="language-go"]:before {
+  content: "go";
 }
 
-div[class~='language-rust']:before {
-  content: 'rust';
+div[class~="language-rust"]:before {
+  content: "rust";
 }
 
-div[class~='language-java']:before {
-  content: 'java';
+div[class~="language-java"]:before {
+  content: "java";
 }
 
-div[class~='language-c']:before {
-  content: 'c';
+div[class~="language-c"]:before {
+  content: "c";
 }
 
-div[class~='language-yaml']:before {
-  content: 'yaml';
+div[class~="language-yaml"]:before {
+  content: "yaml";
 }
 
-div[class~='language-dockerfile']:before {
-  content: 'dockerfile';
+div[class~="language-dockerfile"]:before {
+  content: "dockerfile";
 }
 
-div[class~='language-vue']:before {
-  content: 'vue';
+div[class~="language-vue"]:before {
+  content: "vue";
 }
