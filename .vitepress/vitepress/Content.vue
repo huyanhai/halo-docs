@@ -4,7 +4,7 @@
       <Side />
       <section class="flex-1 w-full pt-30 pb-50 flex flex-row pl-0" :class="{ 'md:pl-280': pagePath !== '/zh/' }">
         <div class="flex-1 w-full flex flex-col">
-          <Content class="flex-1 w-1/2" />
+          <Content class="flex-1 max-w-full" />
           <Pages />
         </div>
         <HyperLink class="hidden md:flex" v-if="!componentsName || componentsName !== 'guide'" />
