@@ -1,7 +1,7 @@
 // title、themeConfig、head参考官网配置
 // https://vitepress.vuejs.org/config/basics.html
 module.exports = {
-  title: "EasiSdk",
+  title: "vitepress-demo",
   base: "/vite-docs/docs/", // 部署路径
   themeConfig: {
     theme: false,
@@ -27,6 +27,10 @@ module.exports = {
               {
                 text: "安装",
                 link: "/zh/guide/base",
+              },
+              {
+                text: "使用",
+                link: "/zh/guide/use",
               },
             ],
           },
@@ -55,13 +59,5 @@ module.exports = {
       },
     ],
   },
-  head: [
-    [
-      "link",
-      {
-        rel: "icon",
-        href: "/favicon.ico",
-      },
-    ],
-  ],
+  head: [],
 };
