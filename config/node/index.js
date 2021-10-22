@@ -59,16 +59,8 @@ module.exports = {
             text: "业务接口",
             children: [
               {
-                text: "config 基础配置",
-                link: "/zh/api/config1",
-              },
-              {
-                text: "ready sdk初始化成功",
-                link: "/zh/api/ready1",
-              },
-              {
-                text: "error sdk初始化失败",
-                link: "/zh/api/error1",
+                text: "demo demo",
+                link: "/zh/api/demo",
               },
             ],
           },
