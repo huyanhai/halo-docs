@@ -1,1 +1,0 @@
-import{_ as n,c as a,a as s,g as t}from"./app.6f4bfed0.js";const p='{"title":"xxx.error","description":"","frontmatter":{},"headers":[{"level":2,"title":"参数","slug":"参数"}],"relativePath":"zh/api/error.md","lastUpdated":1633937708239}',o={},e=[t('',8)];var c=n(o,[["render",function(n,t,p,o,c,r){return s(),a("div",null,e)}]]);export{p as __pageData,c as default};
