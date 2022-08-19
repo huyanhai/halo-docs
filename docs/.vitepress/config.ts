@@ -48,7 +48,7 @@ export default defineConfig({
   base: "/",
   description: "halo",
   lastUpdated: true,
-  outDir: "./dist",
+  outDir: "./docs",
   ignoreDeadLinks: true,
   markdown: {
     theme: "material-palenight",
