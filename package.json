@@ -1,48 +1,31 @@
 {
-  "name": "vite-docs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/huyanhai/vite-docs.git"
-  },
-  "keywords": [
-    "vite-docs"
-  ],
-  "author": "810839700@qq.com",
+  "name": "@zw-h5/sdk-docs",
+  "main": "index.ts",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/huyanhai/vite-docs/issues"
-  },
-  "homepage": "https://github.com/huyanhai/vite-docs#readme",
   "scripts": {
-    "dev": "vitepress dev . --open",
-    "build": "vitepress build --build && yarn mv",
-    "serve": "vitepress serve .",
-    "mv": "bash ./movefile.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress serve docs --port 3010",
+    "mv": "bash scripts/mv.sh",
+    "clean:dist": "rm -rf dist"
   },
   "devDependencies": {
-    "@vue/compiler-sfc": "^3.2.13",
-    "autoprefixer": "^10.3.5",
-    "docsearch.js": "^2.6.3",
-    "highlight.js": "^11.2.0",
-    "markdown-it": "^12.2.0",
-    "markdown-it-container": "^3.0.0",
-    "normalize.css": "^8.0.1",
-    "postcss": "^8.3.7",
-    "postcss-import": "^14.0.2",
-    "sass": "^1.42.1",
-    "tailwindcss": "^2.2.15",
-    "vitepress": "^0.19.1"
+    "autoprefixer": "^10.4.8",
+    "sass": "^1.54.4",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.8",
+    "vitepress": "1.0.0-alpha.5"
   },
   "dependencies": {
-    "@docsearch/js": "^3.0.0-alpha.40",
-    "@vueuse/core": "^6.5.3",
-    "element-plus": "^1.1.0-beta.12",
+    "@vueuse/core": "^9.1.0",
+    "element-plus": "^2.2.13",
+    "highlight.js": "^11.6.0",
     "markdown": "^0.5.0",
-    "marked": "^3.0.4",
+    "markdown-it": "^13.0.1",
+    "markdown-it-container": "^3.0.0",
+    "marked": "^4.0.18",
     "typed.js": "^2.0.12"
   }
 }
