@@ -48,7 +48,6 @@ export default defineConfig({
   base: "/halo-docs",
   description: "halo",
   lastUpdated: true,
-  outDir: "./docs",
   ignoreDeadLinks: true,
   markdown: {
     theme: "material-palenight",
