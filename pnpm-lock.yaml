@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/node': ^18.7.6
+  '@vue/compiler-sfc': ^3.2.37
   '@vueuse/core': ^9.1.0
   autoprefixer: ^10.4.8
   element-plus: ^2.2.13
@@ -27,6 +29,8 @@ dependencies:
   typed.js: 2.0.12
 
 devDependencies:
+  '@types/node': 18.7.6
+  '@vue/compiler-sfc': 3.2.37
   autoprefixer: 10.4.8
   sass: 1.54.4
   tailwindcss: 3.1.8
@@ -275,6 +279,10 @@ packages:
   /@types/lodash/4.14.183:
     resolution: {integrity: sha512-UXavyuxzXKMqJPEpFPri6Ku5F9af6ZJXUneHhvQJxavrEjuHkFp2YnDWHcxJiG7hk8ZkWqjcyNeW1s/smZv5cw==}
     dev: false
+
+  /@types/node/18.7.6:
+    resolution: {integrity: sha512-EdxgKRXgYsNITy5mjjXjVE/CS8YENSdhiagGrLqjG0pvA2owgJ6i4l7wy/PFZGC0B1/H20lWKN7ONVDNYDZm7A==}
+    dev: true
 
   /@types/web-bluetooth/0.0.14:
     resolution: {integrity: sha512-5d2RhCard1nQUC3aHcq/gHzWYO6K0WJmAbjO7mQJgCQKtZpgXxv1rOM6O/dBDhDYYVutk1sciOgNSe+5YyfM8A==}

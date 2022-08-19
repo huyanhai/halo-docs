@@ -2,7 +2,7 @@ import localMd from "markdown-it";
 import markdownContainer from "markdown-it-container";
 import path from "path";
 import fs from "fs";
-import { highlightAuto } from "highlight.js";
+import hljs from "highlight.js";
 import { parse } from "@vue/compiler-sfc";
 
 const scriptSetupRE = /<\s*script[^>]*\bsetup\b[^>]*/;
@@ -38,7 +38,7 @@ export default (md) => {
         if (!source) throw new Error(`Incorrect source file: ${sourceFile}`);
         const { html, js, css, cssPreProcessor, jsPreProcessor } = generateCodePenSnippet(source);
         return `<Demo :demos="demos" source="${encodeURIComponent(
-          highlightAuto(source).value
+          hljs.highlightAuto(source).value
         )}" path="${sourceFile}" html="${html}" js="${js}" css="${css}" css-pre-processor="${cssPreProcessor}" js-pre-processor="${jsPreProcessor}" raw-source="${encodeURIComponent(
           source
         )}" description="${encodeURIComponent(localMd().render(description))}">`;
@@ -52,7 +52,7 @@ function generateCodePenSnippet(source) {
   const { template, script, styles } = parse(source).descriptor;
   const css = (styles || [{ content: "" }]).pop();
   return {
-    html: encodeURIComponent(template.content),
+    html: encodeURIComponent(template!.content),
     js: encodeURIComponent((script ?? { content: "" }).content),
     css: encodeURIComponent(css?.content ?? ""),
     cssPreProcessor: css?.lang ?? "none",
