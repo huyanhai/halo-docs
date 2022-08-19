@@ -45,7 +45,7 @@ export default defineConfig({
   },
   lang: "zh-CN",
   title: "halo",
-  base: "/vite-docs/docs/",
+  base: "/halo-docs/docs/",
   description: "halo",
   lastUpdated: true,
   outDir: "./docs",
