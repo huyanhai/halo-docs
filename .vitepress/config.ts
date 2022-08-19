@@ -45,7 +45,7 @@ export default defineConfig({
   },
   lang: "zh-CN",
   title: "halo",
-  base: "/halo-docs/docs/",
+  base: "/halo-docs",
   description: "halo",
   lastUpdated: true,
   outDir: "./docs",
